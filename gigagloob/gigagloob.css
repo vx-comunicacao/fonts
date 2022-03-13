@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'gigagloob';
+    src: url('gigagloob-black.woff2') format('woff2'),
+        url('gigagloob-black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'gigagloob';
+    src: url('gigagloob-bold.woff2') format('woff2'),
+        url('gigagloob-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'gigagloob';
+    src: url('gigagloob-light.woff2') format('woff2'),
+        url('gigagloob-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'gigagloob';
+    src: url('gigagloob-medium.woff2') format('woff2'),
+        url('gigagloob-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'gigagloob';
+    src: url('gigagloob-semibold.woff2') format('woff2'),
+        url('gigagloob-semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'gigagloob';
+    src: url('gigagloob-regular.woff2') format('woff2'),
+        url('gigagloob-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'gigagloob';
+    src: url('gigagloob-thin.woff2') format('woff2'),
+        url('gigagloob-thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
