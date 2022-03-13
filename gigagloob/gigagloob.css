@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'gigagloob';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-black.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-black.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-black.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'gigagloob';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-bold.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-bold.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-bold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'gigagloob';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-light.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-light.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-light.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'gigagloob';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-medium.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-medium.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-medium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'gigagloob';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-semibold.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-semibold.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-semibold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: 'gigagloob';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-regular.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-regular.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -54,10 +54,9 @@
 
 @font-face {
     font-family: 'gigagloob';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-thin.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@main/gigagloob/gigagloob-thin.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-thin.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/gigagloob/gigagloob-thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
-
