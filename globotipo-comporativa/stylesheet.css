@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'globotipo_corporativa_textos_bold';
+    src: url('GlobotipoCorporativaTextos-Bold.eot');
+    src: url('GlobotipoCorporativaTextos-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GlobotipoCorporativaTextos-Bold.woff2') format('woff2'),
+        url('GlobotipoCorporativaTextos-Bold.woff') format('woff'),
+        url('GlobotipoCorporativaTextos-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'globotipo_corporativa_textos';
+    src: url('GlobotipoCorporativaTextos-Regular.eot');
+    src: url('GlobotipoCorporativaTextos-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GlobotipoCorporativaTextos-Regular.woff2') format('woff2'),
+        url('GlobotipoCorporativaTextos-Regular.woff') format('woff'),
+        url('GlobotipoCorporativaTextos-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'globotipo_corporativa_regular';
+    src: url('GlobotipoCorporativa-Regular.eot');
+    src: url('GlobotipoCorporativa-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GlobotipoCorporativa-Regular.woff2') format('woff2'),
+        url('GlobotipoCorporativa-Regular.woff') format('woff'),
+        url('GlobotipoCorporativa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'globotipo_corporativa_bold';
+    src: url('GlobotipoCorporativa-Bold.eot');
+    src: url('GlobotipoCorporativa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GlobotipoCorporativa-Bold.woff2') format('woff2'),
+        url('GlobotipoCorporativa-Bold.woff') format('woff'),
+        url('GlobotipoCorporativa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
