@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "rc-x-regular";
+    src: url('rc-x-regular.woff') format('woff'),
+        url('rc-x-regular.woff2') format('woff2'),
+        url('rc-x-regular.svg#RecordTypeX-Regular') format('svg'),
+        url('rc-x-regular.eot'),
+        url('rc-x-regular.eot?#iefix') format('embedded-opentype'),
+        url('rc-x-regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
