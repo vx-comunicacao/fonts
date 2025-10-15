@@ -9,5 +9,16 @@
          url('resolve_sans-webfont.svg#resolve_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'resolve_sansregular_nrw';
+    src: url('resolvesans_nrw-webfont.eot');
+    src: url('resolvesans_nrw-webfont.eot?#iefix') format('embedded-opentype'),
+         url('resolvesans_nrw-webfont.woff2') format('woff2'),
+         url('resolvesans_nrw-webfont.woff') format('woff'),
+         url('resolvesans_nrw-webfont.ttf') format('truetype'),
+         url('resolvesans_nrw-webfont.svg#resolve_sansregular_nrw') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
