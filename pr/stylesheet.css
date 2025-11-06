@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: 'presicav_hv_regular';
+    src: url('presicavhv-regular-webfont.woff2') format('woff2'),
+         url('presicavhv-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'presicav_rg_regular';
+    src: url('presicavrg-regular-webfont.woff2') format('woff2'),
+         url('presicavrg-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
