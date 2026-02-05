@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url('Lexend.eot');
+    src: url('Lexend.eot?#iefix') format('embedded-opentype'),
+        url('Lexend.woff2') format('woff2'),
+        url('Lexend.woff') format('woff'),
+        url('Lexend.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend-SemiBold';
+    src: url('Lexend-SemiBold.eot');
+    src: url('Lexend-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Lexend-SemiBold.woff2') format('woff2'),
+        url('Lexend-SemiBold.woff') format('woff'),
+        url('Lexend-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend-ExtraBold';
+    src: url('Lexend-ExtraBold.eot');
+    src: url('Lexend-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Lexend-ExtraBold.woff2') format('woff2'),
+        url('Lexend-ExtraBold.woff') format('woff'),
+        url('Lexend-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend-Black';
+    src: url('Lexend-Black.eot');
+    src: url('Lexend-Black.eot?#iefix') format('embedded-opentype'),
+        url('Lexend-Black.woff2') format('woff2'),
+        url('Lexend-Black.woff') format('woff'),
+        url('Lexend-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
