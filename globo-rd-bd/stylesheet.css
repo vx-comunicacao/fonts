@@ -1,0 +1,42 @@
+
+@font-face {
+    font-family: 'globotipo_roundedbold';
+    src: url('globo-rd-bd-webfont.woff2') format('woff2'),
+         url('globo-rd-bd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'globotipo_roundedblack';
+    src: url('globo-rd-bk-webfont.woff2') format('woff2'),
+         url('globo-rd-bk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'globotipo_roundedlight';
+    src: url('globo-rd-lt-webfont.woff2') format('woff2'),
+         url('globo-rd-lt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'globotipo_roundedregular';
+    src: url('globo-rd-rg-webfont.woff2') format('woff2'),
+         url('globo-rd-rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'globotipo_roundedthin';
+    src: url('globo-rd-th-webfont.woff2') format('woff2'),
+         url('globo-rd-th-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
