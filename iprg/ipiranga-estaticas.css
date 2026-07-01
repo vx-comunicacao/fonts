@@ -1,0 +1,262 @@
+/* ==========================================================================
+   Ipiranga Webfonts — estáticas (Títulos + Textos em um arquivo)
+   --------------------------------------------------------------------------
+   Contém as duas famílias estáticas hardcoded (sem @import, sem variáveis):
+     'Ipiranga Titulos'   -> títulos/display   (title/)
+     'Ipiranga Textos'    -> corpo/leitura     (text/)
+
+   Cada família usa UM font-family; peso e itálico por font-weight/font-style.
+   Pesos: 100 Thin · 300 Light · 400 Regular · 500 Medium
+          700 Bold · 800 ExtraBold · 900 Black   (todos com itálico)
+
+   Importar via CDN:
+     <link rel="stylesheet" href="https://SUA-CDN/iprg/ipiranga-estaticas.css">
+   ========================================================================== */
+
+
+/* =========================================================================
+   IPIRANGA TITULOS  (title/)  —  font-family: 'Ipiranga Titulos'
+   ========================================================================= */
+
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-Thin.woff2') format('woff2'),
+         url('title/IpirangaTitulos-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-ThinItalic.woff2') format('woff2'),
+         url('title/IpirangaTitulos-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-Light.woff2') format('woff2'),
+         url('title/IpirangaTitulos-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-LightItalic.woff2') format('woff2'),
+         url('title/IpirangaTitulos-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-Regular.woff2') format('woff2'),
+         url('title/IpirangaTitulos-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-Italic.woff2') format('woff2'),
+         url('title/IpirangaTitulos-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-Medium.woff2') format('woff2'),
+         url('title/IpirangaTitulos-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-MediumItalic.woff2') format('woff2'),
+         url('title/IpirangaTitulos-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-Bold.woff2') format('woff2'),
+         url('title/IpirangaTitulos-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-BoldItalic.woff2') format('woff2'),
+         url('title/IpirangaTitulos-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-ExtraBold.woff2') format('woff2'),
+         url('title/IpirangaTitulos-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-ExtraBoldItalic.woff2') format('woff2'),
+         url('title/IpirangaTitulos-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-Black.woff2') format('woff2'),
+         url('title/IpirangaTitulos-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('title/IpirangaTitulos-BlackItalic.woff2') format('woff2'),
+         url('title/IpirangaTitulos-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* =========================================================================
+   IPIRANGA TEXTOS  (text/)  —  font-family: 'Ipiranga Textos'
+   ========================================================================= */
+
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-Thin.woff2') format('woff2'),
+         url('text/IpirangaTextos-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-ThinItalic.woff2') format('woff2'),
+         url('text/IpirangaTextos-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-Light.woff2') format('woff2'),
+         url('text/IpirangaTextos-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-LightItalic.woff2') format('woff2'),
+         url('text/IpirangaTextos-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-Regular.woff2') format('woff2'),
+         url('text/IpirangaTextos-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-Italic.woff2') format('woff2'),
+         url('text/IpirangaTextos-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-Medium.woff2') format('woff2'),
+         url('text/IpirangaTextos-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-MediumItalic.woff2') format('woff2'),
+         url('text/IpirangaTextos-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-Bold.woff2') format('woff2'),
+         url('text/IpirangaTextos-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-BoldItalic.woff2') format('woff2'),
+         url('text/IpirangaTextos-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-ExtraBold.woff2') format('woff2'),
+         url('text/IpirangaTextos-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-ExtraBoldItalic.woff2') format('woff2'),
+         url('text/IpirangaTextos-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-Black.woff2') format('woff2'),
+         url('text/IpirangaTextos-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('text/IpirangaTextos-BlackItalic.woff2') format('woff2'),
+         url('text/IpirangaTextos-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}

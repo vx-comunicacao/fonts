@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ipiranga Webfonts — Amostra</title>
+<link rel="stylesheet" href="stylesheet.css">
+<style>
+    :root {
+        --ipiranga-azul: #003c8f;
+        --ipiranga-amarelo: #ffd100;
+        --cinza: #f4f5f7;
+        --texto: #1a1a1a;
+        --borda: #e4e6eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        background: var(--cinza);
+        color: var(--texto);
+        font-family: 'Ipiranga Textos', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        line-height: 1.5;
+    }
+
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+    /* ---------- Cabeçalho ---------- */
+    header {
+        background: var(--ipiranga-azul);
+        color: #fff;
+        padding: 56px 0 48px;
+        border-bottom: 6px solid var(--ipiranga-amarelo);
+    }
+    header h1 {
+        font-family: 'Ipiranga Titulos', sans-serif;
+        font-weight: 900;
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        margin: 0 0 8px;
+        letter-spacing: -0.02em;
+    }
+    header p {
+        font-weight: 300;
+        font-size: 1.15rem;
+        margin: 0;
+        opacity: 0.9;
+    }
+
+    /* ---------- Seções ---------- */
+    section {
+        background: #fff;
+        border: 1px solid var(--borda);
+        border-radius: 12px;
+        padding: 32px;
+        margin: 32px 0;
+    }
+    .section-tag {
+        display: inline-block;
+        font-family: 'Ipiranga Textos', sans-serif;
+        font-weight: 700;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--ipiranga-azul);
+        background: var(--ipiranga-amarelo);
+        padding: 4px 10px;
+        border-radius: 20px;
+        margin-bottom: 16px;
+    }
+    section > h2 {
+        font-family: 'Ipiranga Titulos', sans-serif;
+        font-weight: 800;
+        font-size: 2rem;
+        margin: 0 0 4px;
+        color: var(--ipiranga-azul);
+    }
+    .desc { color: #555; margin: 0 0 24px; max-width: 620px; }
+
+    /* ---------- Linha de peso ---------- */
+    .weight-row {
+        display: flex;
+        align-items: baseline;
+        gap: 16px;
+        padding: 14px 0;
+        border-top: 1px solid var(--borda);
+        flex-wrap: wrap;
+    }
+    .weight-row:first-of-type { border-top: none; }
+    .weight-meta {
+        flex: 0 0 130px;
+        font-size: 0.78rem;
+        color: #888;
+        font-weight: 500;
+    }
+    .weight-meta strong { display: block; color: #333; font-size: 0.9rem; }
+    .sample-title { font-family: 'Ipiranga Titulos', sans-serif; }
+    .sample-text  { font-family: 'Ipiranga Textos', sans-serif; }
+    .sample {
+        flex: 1 1 300px;
+        font-size: 1.9rem;
+        line-height: 1.25;
+        margin: 0;
+    }
+    .sample .it { font-style: italic; opacity: 0.85; margin-left: 0.5em; font-size: 0.7em; }
+
+    /* ---------- Bloco de uso real ---------- */
+    .usecase { display: grid; gap: 20px; }
+    .card {
+        border: 1px solid var(--borda);
+        border-radius: 10px;
+        padding: 24px;
+    }
+    .card h3 {
+        font-family: 'Ipiranga Titulos', sans-serif;
+        font-weight: 900;
+        font-size: 1.8rem;
+        color: var(--ipiranga-azul);
+        margin: 0 0 10px;
+    }
+    .card .kicker {
+        font-family: 'Ipiranga Titulos', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 0.75rem;
+        color: var(--ipiranga-amarelo);
+        background: var(--ipiranga-azul);
+        display: inline-block;
+        padding: 3px 8px;
+        border-radius: 4px;
+        margin-bottom: 12px;
+    }
+    .card p { font-family: 'Ipiranga Textos', sans-serif; margin: 0 0 12px; color: #333; }
+    .card p:last-child { margin-bottom: 0; }
+
+    /* ---------- Variável ---------- */
+    .vf-demo { font-size: 3rem; line-height: 1.2; margin: 0 0 20px; }
+    .vf-controls { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    .vf-controls label { font-weight: 500; font-size: 0.9rem; }
+    .vf-controls input[type=range] { flex: 1 1 240px; accent-color: var(--ipiranga-azul); }
+    .vf-value {
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+        min-width: 3ch;
+        color: var(--ipiranga-azul);
+    }
+    .vf-textos  { font-family: 'Ipiranga Textos VF', 'Ipiranga Textos', sans-serif; }
+    .vf-titulos { font-family: 'Ipiranga Titulos VF', 'Ipiranga Titulos', sans-serif; }
+
+    /* ---------- Glifos ---------- */
+    .glyphs { font-size: 1.6rem; letter-spacing: 0.06em; word-break: break-word; }
+
+    footer {
+        text-align: center;
+        color: #888;
+        font-size: 0.85rem;
+        padding: 40px 0 60px;
+    }
+    code {
+        background: #eef0f4;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: 'SFMono-Regular', Consolas, monospace;
+        font-size: 0.85em;
+    }
+
+    /* ---------- Bloco de instruções / código ---------- */
+    .howto { counter-reset: step; }
+    .howto .step {
+        position: relative;
+        padding: 0 0 24px 44px;
+        border-left: 2px solid var(--borda);
+        margin-left: 14px;
+    }
+    .howto .step:last-child { border-left-color: transparent; padding-bottom: 0; }
+    .howto .step::before {
+        counter-increment: step;
+        content: counter(step);
+        position: absolute;
+        left: -15px;
+        top: -2px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--ipiranga-azul);
+        color: #fff;
+        font-family: 'Ipiranga Titulos', sans-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .howto h4 {
+        font-family: 'Ipiranga Titulos', sans-serif;
+        font-weight: 800;
+        font-size: 1.15rem;
+        margin: 2px 0 10px;
+        color: var(--texto);
+    }
+    .howto p { margin: 0 0 12px; color: #444; }
+    pre {
+        background: #0f1b2d;
+        color: #e6edf6;
+        border-radius: 8px;
+        padding: 16px 18px;
+        overflow-x: auto;
+        margin: 0 0 8px;
+        font-size: 0.85rem;
+        line-height: 1.55;
+    }
+    pre code {
+        background: none;
+        color: inherit;
+        padding: 0;
+        font-size: inherit;
+    }
+    pre .c { color: #7d8ea3; }   /* comentário */
+    pre .k { color: #ffd100; }   /* palavra-chave / seletor */
+    pre .s { color: #7ee0a8; }   /* string / valor */
+
+    /* ---------- Tabela de arquivos ---------- */
+    .files {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 0 8px;
+        font-size: 0.9rem;
+    }
+    .files th, .files td {
+        text-align: left;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--borda);
+        vertical-align: top;
+    }
+    .files th {
+        font-family: 'Ipiranga Titulos', sans-serif;
+        font-weight: 700;
+        color: var(--ipiranga-azul);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+    .files td code { white-space: nowrap; }
+    .files tr:last-child td { border-bottom: none; }
+    .files .when { color: #555; }
+
+    /* ---------- Guia de fontes variáveis ---------- */
+    .lead { font-size: 1.05rem; color: #333; }
+    .cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 4px 0 24px;
+    }
+    .cols .box {
+        border: 1px solid var(--borda);
+        border-radius: 10px;
+        padding: 18px;
+    }
+    .cols .box h4 {
+        font-family: 'Ipiranga Titulos', sans-serif;
+        font-weight: 700;
+        margin: 0 0 10px;
+        font-size: 1rem;
+    }
+    .cols .bad h4 { color: #b23b3b; }
+    .cols .good h4 { color: #1e8a55; }
+    .cols ul { margin: 0; padding-left: 18px; color: #444; font-size: 0.9rem; line-height: 1.7; }
+    .axis-list { display: grid; gap: 10px; margin: 0 0 24px; }
+    .axis {
+        display: flex;
+        gap: 14px;
+        align-items: baseline;
+        padding: 12px 14px;
+        border: 1px solid var(--borda);
+        border-radius: 8px;
+    }
+    .axis .tag {
+        font-family: 'SFMono-Regular', Consolas, monospace;
+        font-weight: 700;
+        background: var(--ipiranga-azul);
+        color: #fff;
+        padding: 3px 8px;
+        border-radius: 5px;
+        font-size: 0.85rem;
+        flex: 0 0 auto;
+    }
+    .axis .tag.opt { background: #8894a6; }
+    .axis .info { font-size: 0.9rem; color: #444; }
+    .axis .info strong { color: var(--texto); }
+    .callout {
+        background: #fffdf0;
+        border: 1px solid #ffe58a;
+        border-left: 4px solid var(--ipiranga-amarelo);
+        border-radius: 8px;
+        padding: 14px 16px;
+        font-size: 0.9rem;
+        color: #5a4b00;
+        margin: 0 0 8px;
+    }
+    @media (max-width: 640px) { .cols { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="wrap">
+        <h1>Ipiranga</h1>
+        <p>Família tipográfica corporativa — Títulos, Textos e Variáveis</p>
+    </div>
+</header>
+
+<div class="wrap">
+
+    <!-- ============ TITULOS ============ -->
+    <section>
+        <span class="section-tag">title/ — display &amp; títulos</span>
+        <h2>Ipiranga Títulos</h2>
+        <p class="desc">
+            Desenhada para <strong>títulos, chamadas e peças de destaque</strong>.
+            Traços mais expressivos e ótimo desempenho em tamanhos grandes.
+            Use via <code>font-family: 'Ipiranga Titulos'</code>.
+        </p>
+
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Thin</strong>weight: 100</div>
+            <p class="sample sample-title" style="font-weight:100">Combustível<span class="it" style="font-weight:100">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Light</strong>weight: 300</div>
+            <p class="sample sample-title" style="font-weight:300">Combustível<span class="it" style="font-weight:300">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Regular</strong>weight: 400</div>
+            <p class="sample sample-title" style="font-weight:400">Combustível<span class="it" style="font-weight:400">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Medium</strong>weight: 500</div>
+            <p class="sample sample-title" style="font-weight:500">Combustível<span class="it" style="font-weight:500">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Bold</strong>weight: 700</div>
+            <p class="sample sample-title" style="font-weight:700">Combustível<span class="it" style="font-weight:700">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>ExtraBold</strong>weight: 800</div>
+            <p class="sample sample-title" style="font-weight:800">Combustível<span class="it" style="font-weight:800">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Black</strong>weight: 900</div>
+            <p class="sample sample-title" style="font-weight:900">Combustível<span class="it" style="font-weight:900">itálico</span></p>
+        </div>
+    </section>
+
+    <!-- ============ TEXTOS ============ -->
+    <section>
+        <span class="section-tag">text/ — corpo &amp; leitura</span>
+        <h2>Ipiranga Textos</h2>
+        <p class="desc">
+            Otimizada para <strong>corpo de texto, parágrafos e interfaces</strong>,
+            com alta legibilidade em tamanhos pequenos.
+            Use via <code>font-family: 'Ipiranga Textos'</code>.
+        </p>
+
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Thin</strong>weight: 100</div>
+            <p class="sample sample-text" style="font-weight:100">Combustível<span class="it" style="font-weight:100">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Light</strong>weight: 300</div>
+            <p class="sample sample-text" style="font-weight:300">Combustível<span class="it" style="font-weight:300">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Regular</strong>weight: 400</div>
+            <p class="sample sample-text" style="font-weight:400">Combustível<span class="it" style="font-weight:400">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Medium</strong>weight: 500</div>
+            <p class="sample sample-text" style="font-weight:500">Combustível<span class="it" style="font-weight:500">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Bold</strong>weight: 700</div>
+            <p class="sample sample-text" style="font-weight:700">Combustível<span class="it" style="font-weight:700">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>ExtraBold</strong>weight: 800</div>
+            <p class="sample sample-text" style="font-weight:800">Combustível<span class="it" style="font-weight:800">itálico</span></p>
+        </div>
+        <div class="weight-row">
+            <div class="weight-meta"><strong>Black</strong>weight: 900</div>
+            <p class="sample sample-text" style="font-weight:900">Combustível<span class="it" style="font-weight:900">itálico</span></p>
+        </div>
+    </section>
+
+    <!-- ============ USO REAL ============ -->
+    <section>
+        <span class="section-tag">exemplo de uso combinado</span>
+        <h2>Títulos + Textos na prática</h2>
+        <p class="desc">Como as duas famílias se comportam juntas em uma composição real.</p>
+
+        <div class="usecase">
+            <div class="card">
+                <span class="kicker">Postos Ipiranga</span>
+                <h3>Abasteça e ganhe pontos no Km de Vantagens</h3>
+                <p>
+                    A cada litro abastecido na rede Ipiranga você acumula pontos que podem ser
+                    trocados por descontos, produtos e experiências. O programa Km de Vantagens é
+                    o maior de fidelidade do Brasil, com milhares de parceiros em todo o país.
+                </p>
+                <p>
+                    Baixe o aplicativo, cadastre-se gratuitamente e comece a transformar cada
+                    abastecimento em recompensa. <strong>Simples assim.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ VARIÁVEIS ============ -->
+    <section>
+        <span class="section-tag">variable/ — fonte variável</span>
+        <h2>Ipiranga Variable</h2>
+        <p class="desc">
+            Um único arquivo por família cobrindo todo o eixo de peso
+            (<code>font-weight: 100 → 900</code>). Arraste para ver a interpolação em tempo real.
+            Use via <code>font-family: 'Ipiranga Titulos VF'</code> ou <code>'Ipiranga Textos VF'</code>.
+        </p>
+
+        <p class="vf-demo vf-titulos" id="vfTituloSample" style="font-weight:400; color:var(--ipiranga-azul)">
+            Ipiranga Títulos Variable
+        </p>
+        <p class="vf-demo vf-textos" id="vfTextoSample" style="font-weight:400;">
+            Ipiranga Textos Variable
+        </p>
+
+        <div class="vf-controls">
+            <label for="vfWeight">Peso</label>
+            <input type="range" id="vfWeight" min="200" max="900" step="1" value="400">
+            <span class="vf-value" id="vfWeightVal">400</span>
+        </div>
+    </section>
+
+    <!-- ============ GUIA: FONTES VARIÁVEIS ============ -->
+    <section>
+        <span class="section-tag">guia — entenda as fontes variáveis</span>
+        <h2>O que são fontes variáveis?</h2>
+        <p class="lead">
+            Uma <strong>fonte variável</strong> (Variable Font, ou VF) é um único arquivo
+            que guarda toda uma família tipográfica de forma contínua. Em vez de um arquivo
+            fechado para cada peso (Light, Regular, Bold…), ela armazena os extremos do
+            desenho e deixa o navegador <strong>interpolar</strong> qualquer valor entre eles.
+        </p>
+
+        <div class="cols">
+            <div class="box bad">
+                <h4>Fonte estática (tradicional)</h4>
+                <ul>
+                    <li>1 arquivo por peso/estilo (ex.: 14 arquivos)</li>
+                    <li>Só os pesos "prontos": 400, 700…</li>
+                    <li>Mais requisições de rede</li>
+                    <li>Nada entre um peso e outro</li>
+                </ul>
+            </div>
+            <div class="box good">
+                <h4>Fonte variável</h4>
+                <ul>
+                    <li>1 arquivo cobre a família inteira</li>
+                    <li>Qualquer peso do intervalo (ex.: 437, 650…)</li>
+                    <li>Menos requisições</li>
+                    <li>Transições/animações suaves de peso</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 style="font-family:'Ipiranga Titulos',sans-serif;color:var(--ipiranga-azul);font-size:1.3rem;margin:0 0 8px;">Eixos (axes)</h3>
+        <p class="desc" style="margin-bottom:14px;">
+            O que "varia" na fonte são os <strong>eixos</strong>. Cada eixo tem uma tag de 4
+            letras e um intervalo mínimo–máximo. Existem eixos <em>registrados</em> (padrão) e
+            eixos <em>personalizados</em> (definidos pela fundição). As fontes Ipiranga VF
+            expõem <code>wght</code> e <code>ital</code>:
+        </p>
+        <div class="axis-list">
+            <div class="axis">
+                <span class="tag">wght</span>
+                <span class="info"><strong>Weight / Peso</strong> — controla a espessura. Ipiranga: <strong>200 a 900</strong>. Mapeado pela propriedade CSS <code>font-weight</code>.</span>
+            </div>
+            <div class="axis">
+                <span class="tag">ital</span>
+                <span class="info"><strong>Italic / Itálico</strong> — alterna entre romano (0) e itálico (1). Ipiranga: <strong>0 a 1</strong>. Ativado por <code>font-style: italic</code>.</span>
+            </div>
+            <div class="axis">
+                <span class="tag opt">slnt</span>
+                <span class="info"><strong>Slant / Inclinação</strong> — inclina as letras em graus (oblíquo). <em>Não presente</em> na Ipiranga; mapeado por <code>font-style: oblique &lt;ângulo&gt;</code>.</span>
+            </div>
+            <div class="axis">
+                <span class="tag opt">wdth</span>
+                <span class="info"><strong>Width / Largura</strong> — condensada ↔ expandida. <em>Não presente</em> na Ipiranga; mapeado por <code>font-stretch</code>.</span>
+            </div>
+            <div class="axis">
+                <span class="tag opt">opsz</span>
+                <span class="info"><strong>Optical Size</strong> — ajusta o desenho ao tamanho de uso. <em>Não presente</em> na Ipiranga; mapeado por <code>font-optical-sizing</code>.</span>
+            </div>
+        </div>
+
+        <h3 style="font-family:'Ipiranga Titulos',sans-serif;color:var(--ipiranga-azul);font-size:1.3rem;margin:8px 0 8px;">CSS para fontes variáveis</h3>
+
+        <div class="howto">
+            <div class="step">
+                <h4>1. Declarar o @font-face com intervalo</h4>
+                <p>
+                    A diferença para a fonte estática é que <code>font-weight</code> recebe
+                    <strong>dois valores</strong> (o intervalo do eixo), não um só. Para o
+                    itálico, declara-se um segundo <code>@font-face</code> apontando para o
+                    <strong>mesmo arquivo</strong> com <code>font-style: italic</code>:
+                </p>
+<pre><code><span class="k">@font-face</span> {
+    font-family: <span class="s">'Ipiranga Titulos VF'</span>;
+    src: <span class="s">url('variable/IpirangaVariableTitulos.woff2')</span> format(<span class="s">'woff2'</span>);
+    font-weight: <span class="s">200 900</span>;        <span class="c">/* intervalo do eixo wght */</span>
+    font-style: <span class="s">normal</span>;
+    font-display: <span class="s">swap</span>;
+}
+<span class="k">@font-face</span> {
+    font-family: <span class="s">'Ipiranga Titulos VF'</span>;
+    src: <span class="s">url('variable/IpirangaVariableTitulos.woff2')</span> format(<span class="s">'woff2'</span>);
+    font-weight: <span class="s">200 900</span>;
+    font-style: <span class="s">italic</span>;         <span class="c">/* ativa o eixo ital */</span>
+    font-display: <span class="s">swap</span>;
+}</code></pre>
+            </div>
+
+            <div class="step">
+                <h4>2. Usar com propriedades CSS normais</h4>
+                <p>
+                    O jeito recomendado é usar as propriedades de alto nível — elas mapeiam
+                    para os eixos automaticamente e continuam funcionando se um dia a fonte
+                    voltar a ser estática:
+                </p>
+<pre><code><span class="k">.titulo</span> {
+    font-family: <span class="s">'Ipiranga Titulos VF'</span>, sans-serif;
+    font-weight: <span class="s">650</span>;      <span class="c">/* qualquer valor entre 200 e 900 */</span>
+}
+<span class="k">.titulo em</span> { font-style: <span class="s">italic</span>; }</code></pre>
+            </div>
+
+            <div class="step">
+                <h4>3. Controle fino com font-variation-settings</h4>
+                <p>
+                    Para acessar eixos diretamente (ou eixos personalizados sem propriedade
+                    equivalente), use <code>font-variation-settings</code> com a tag do eixo.
+                    Prefira as propriedades do passo 2 quando existirem; recorra a isto só
+                    quando necessário:
+                </p>
+<pre><code><span class="k">.titulo</span> {
+    font-variation-settings: <span class="s">'wght' 650</span>, <span class="s">'ital' 0</span>;
+}</code></pre>
+                <div class="callout">
+                    <strong>Atenção:</strong> <code>font-variation-settings</code> não é
+                    herdado de forma acumulativa — ao redefini-lo, repita todos os eixos que
+                    quiser manter, senão eles voltam ao valor padrão.
+                </div>
+            </div>
+
+            <div class="step">
+                <h4>4. Animar / transicionar o peso</h4>
+                <p>Como o eixo é contínuo, dá para animar o peso de forma fluida:</p>
+<pre><code><span class="k">.titulo</span> {
+    font-family: <span class="s">'Ipiranga Titulos VF'</span>, sans-serif;
+    font-weight: <span class="s">400</span>;
+    transition: <span class="s">font-weight .3s ease</span>;
+}
+<span class="k">.titulo:hover</span> { font-weight: <span class="s">800</span>; }</code></pre>
+            </div>
+        </div>
+
+        <div class="callout" style="margin-top:8px;">
+            <strong>Suporte:</strong> fontes variáveis funcionam em todos os navegadores
+            modernos (Chrome, Edge, Firefox, Safari). A lista de <code>font-family</code>
+            já inclui a versão estática como fallback (<code>'Ipiranga Titulos VF', 'Ipiranga Titulos'</code>).
+        </div>
+    </section>
+
+    <!-- ============ COMO USAR ============ -->
+    <section>
+        <span class="section-tag">integração — como usar</span>
+        <h2>Usar em outros projetos</h2>
+        <p class="desc">
+            Publique a pasta <code>iprg/</code> inteira (com <code>text/</code>,
+            <code>title/</code>, <code>variable/</code> e os arquivos <code>.css</code>)
+            na sua CDN, mantendo a estrutura de subpastas. Depois é só importar.
+        </p>
+
+        <div class="howto">
+
+            <div class="step">
+                <h4>Escolher o arquivo — qual e quando usar</h4>
+                <p>
+                    A pasta traz vários <code>.css</code> hardcoded (sem <code>@import</code>).
+                    Carregue <strong>só o que o projeto usa</strong>: menos CSS para parsear
+                    e sem baixar declarações de fontes que nunca serão aplicadas.
+                </p>
+                <table class="files">
+                    <thead>
+                        <tr><th>Arquivo</th><th>Contém</th><th>Quando usar</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>ipiranga-titulos.css</code></td>
+                            <td>Só Títulos (estática)</td>
+                            <td class="when">O projeto usa apenas títulos/display.</td>
+                        </tr>
+                        <tr>
+                            <td><code>ipiranga-textos.css</code></td>
+                            <td>Só Textos (estática)</td>
+                            <td class="when">O projeto usa apenas corpo de texto.</td>
+                        </tr>
+                        <tr>
+                            <td><code>ipiranga-estaticas.css</code></td>
+                            <td>Títulos + Textos (estáticas)</td>
+                            <td class="when">Caso mais comum: as duas famílias, sem variável.</td>
+                        </tr>
+                        <tr>
+                            <td><code>ipiranga-variable.css</code></td>
+                            <td>Só as variáveis (VF)</td>
+                            <td class="when">Precisa de pesos intermediários/animação, ou quer 1 arquivo por família.</td>
+                        </tr>
+                        <tr>
+                            <td><code>stylesheet.css</code></td>
+                            <td>Tudo (estáticas + VF)</td>
+                            <td class="when">Protótipo ou quando quer todas as opções disponíveis.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="step">
+                <h4>Importar</h4>
+                <p>Via <code>&lt;link&gt;</code> no <code>&lt;head&gt;</code> (troque <code>SUA-CDN</code>). Ex.: as duas famílias estáticas:</p>
+<pre><code><span class="k">&lt;link</span> rel=<span class="s">"stylesheet"</span> href=<span class="s">"https://SUA-CDN/iprg/ipiranga-estaticas.css"</span><span class="k">&gt;</span></code></pre>
+                <p>Ou via <code>@import</code> no topo do seu CSS:</p>
+<pre><code><span class="k">@import</span> <span class="s">url('https://SUA-CDN/iprg/ipiranga-estaticas.css')</span>;</code></pre>
+            </div>
+
+            <div class="step">
+                <h4>Aplicar as fontes</h4>
+                <p>
+                    Cada família usa um único <code>font-family</code>; o peso e o itálico
+                    são controlados por <code>font-weight</code> / <code>font-style</code>.
+                    Pesos: <strong>100</strong> Thin · <strong>300</strong> Light ·
+                    <strong>400</strong> Regular · <strong>500</strong> Medium ·
+                    <strong>700</strong> Bold · <strong>800</strong> ExtraBold ·
+                    <strong>900</strong> Black.
+                </p>
+<pre><code><span class="c">/* Títulos — display / chamadas */</span>
+<span class="k">h1, h2, h3</span> {
+    font-family: <span class="s">'Ipiranga Titulos'</span>, sans-serif;
+    font-weight: <span class="s">900</span>;
+}
+
+<span class="c">/* Textos — corpo / interface */</span>
+<span class="k">body, p</span> {
+    font-family: <span class="s">'Ipiranga Textos'</span>, sans-serif;
+    font-weight: <span class="s">400</span>;
+}
+
+<span class="c">/* Itálico */</span>
+<span class="k">em</span> { font-style: <span class="s">italic</span>; }</code></pre>
+            </div>
+
+            <div class="step">
+                <h4>Fontes variáveis (opcional)</h4>
+                <p>
+                    Eixo de peso contínuo de <strong>200 a 900</strong> + itálico, em um
+                    único arquivo por família. Substituem as estáticas por completo.
+                </p>
+<pre><code><span class="k">.titulo-fluido</span> {
+    font-family: <span class="s">'Ipiranga Titulos VF'</span>, <span class="s">'Ipiranga Titulos'</span>, sans-serif;
+    font-weight: <span class="s">650</span>;                <span class="c">/* qualquer valor 200–900 */</span>
+}
+<span class="k">.titulo-fluido em</span> { font-style: <span class="s">italic</span>; }   <span class="c">/* ativa o eixo ital */</span></code></pre>
+            </div>
+
+            <div class="step">
+                <h4>Performance (opcional)</h4>
+                <p>Pré-carregue os arquivos mais usados no <code>&lt;head&gt;</code> para evitar flash:</p>
+<pre><code><span class="k">&lt;link</span> rel=<span class="s">"preload"</span> as=<span class="s">"font"</span> type=<span class="s">"font/woff2"</span> crossorigin
+      href=<span class="s">"https://SUA-CDN/iprg/text/IpirangaTextos-Regular.woff2"</span><span class="k">&gt;</span>
+<span class="k">&lt;link</span> rel=<span class="s">"preload"</span> as=<span class="s">"font"</span> type=<span class="s">"font/woff2"</span> crossorigin
+      href=<span class="s">"https://SUA-CDN/iprg/title/IpirangaTitulos-Black.woff2"</span><span class="k">&gt;</span></code></pre>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ GLIFOS ============ -->
+    <section>
+        <span class="section-tag">conjunto de caracteres</span>
+        <h2>Glifos &amp; acentuação</h2>
+        <p class="desc">Suporte a português e caracteres comuns (família Textos).</p>
+        <p class="glyphs sample-text" style="font-weight:400">
+            ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+            abcdefghijklmnopqrstuvwxyz<br>
+            áàâãäéèêëíìîïóòôõöúùûüçñ ÁÀÂÃÄÉÈÊËÍÌÎÏÓÒÔÕÖÚÙÛÜÇÑ<br>
+            0123456789 &amp; @ # % ‰ ( ) [ ] { } / \ € $ R$ « » “ ” ‘ ’ — –
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    <div class="wrap">
+        Ipiranga Webfonts • <code>@import url('stylesheet.css')</code> • pronto para CDN
+    </div>
+</footer>
+
+<script>
+    var slider = document.getElementById('vfWeight');
+    var val = document.getElementById('vfWeightVal');
+    var t1 = document.getElementById('vfTituloSample');
+    var t2 = document.getElementById('vfTextoSample');
+    slider.addEventListener('input', function () {
+        var w = this.value;
+        val.textContent = w;
+        t1.style.fontWeight = w;
+        t2.style.fontWeight = w;
+    });
+</script>
+
+</body>
+</html>
