@@ -11,7 +11,7 @@
      ipiranga-titulos.css · ipiranga-textos.css · ipiranga-variable.css
 
    Importar via CDN:
-     <link rel="stylesheet" href="https://SUA-CDN/iprg/stylesheet.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/iprg/stylesheet.css">
    ========================================================================== */
 
 
@@ -303,15 +303,15 @@
 /* =========================================================================
    COMO USAR EM OUTROS PROJETOS
    -------------------------------------------------------------------------
-   1) IMPORTAR (troque SUA-CDN pela URL real da CDN)
+   1) IMPORTAR (via jsDelivr, direto do repositório GitHub)
 
       Tudo de uma vez (este arquivo):
-         <link rel="stylesheet" href="https://SUA-CDN/iprg/stylesheet.css">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/iprg/stylesheet.css">
 
       Ou só o que precisar (arquivos modulares):
-         <link rel="stylesheet" href="https://SUA-CDN/iprg/ipiranga-titulos.css">
-         <link rel="stylesheet" href="https://SUA-CDN/iprg/ipiranga-textos.css">
-         <link rel="stylesheet" href="https://SUA-CDN/iprg/ipiranga-variable.css">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/iprg/ipiranga-titulos.css">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/iprg/ipiranga-textos.css">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/iprg/ipiranga-variable.css">
 
    2) APLICAR — ESTÁTICAS
       Cada família usa UM font-family; peso e itálico por
@@ -337,9 +337,9 @@
    4) PERFORMANCE (opcional)
       Pré-carregue os arquivos mais usados no <head>:
          <link rel="preload" as="font" type="font/woff2" crossorigin
-               href="https://SUA-CDN/iprg/text/IpirangaTextos-Regular.woff2">
+               href="https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/iprg/text/IpirangaTextos-Regular.woff2">
          <link rel="preload" as="font" type="font/woff2" crossorigin
-               href="https://SUA-CDN/iprg/title/IpirangaTitulos-Black.woff2">
+               href="https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/iprg/title/IpirangaTitulos-Black.woff2">
 
    OBSERVAÇÃO
       Publique a pasta iprg/ inteira (text/, title/, variable/ + os .css)
