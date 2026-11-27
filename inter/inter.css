@@ -1,9 +1,9 @@
-/* Inter 4.1 (rsms/inter, SIL Open Font License 1.1 — ver LICENSE.txt). Uso: <link href="https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/inter.css" rel="stylesheet"> */
+/* Inter 4.1 (rsms/inter, SIL Open Font License 1.1 — ver LICENSE.txt). Uso (versão fixa): <link href="https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@v1.1.1/inter/inter.css" rel="stylesheet"> — URLs relativas: as fontes vêm da mesma versão do CSS */
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-Regular.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-Regular.woff') format('woff');
+    src: url('Inter-Regular.woff2') format('woff2'),
+        url('Inter-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-Italic.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-Italic.woff') format('woff');
+    src: url('Inter-Italic.woff2') format('woff2'),
+        url('Inter-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-Medium.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-Medium.woff') format('woff');
+    src: url('Inter-Medium.woff2') format('woff2'),
+        url('Inter-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-SemiBold.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-SemiBold.woff') format('woff');
+    src: url('Inter-SemiBold.woff2') format('woff2'),
+        url('Inter-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-Bold.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-Bold.woff') format('woff');
+    src: url('Inter-Bold.woff2') format('woff2'),
+        url('Inter-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -47,8 +47,8 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-ExtraBold.woff2') format('woff2'),
-        url('https://cdn.jsdelivr.net/gh/vx-comunicacao/fonts@master/inter/Inter-ExtraBold.woff') format('woff');
+    src: url('Inter-ExtraBold.woff2') format('woff2'),
+        url('Inter-ExtraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
